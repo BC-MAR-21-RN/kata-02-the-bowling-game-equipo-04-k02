@@ -3,13 +3,16 @@
   "version": "1.0.0",
   "description": "![BrightCoders Logo](img/logo-bc.png)",
   "main": "main.js",
-  "type":"commonjs",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BC-MAR-21-RN/kata-02-the-bowling-game-equipo-04-k02.git"
+  },
+  "transform": {
+    "^.+\\.jsx?$": "babel-jest"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +22,9 @@
   },
   "homepage": "https://github.com/BC-MAR-21-RN/kata-02-the-bowling-game-equipo-04-k02#readme",
   "devDependencies": {
-    "eslint": "^7.22.0"
+    "@babel/preset-env": "^7.13.10",
+    "babel-jest": "^26.6.3",
+    "eslint": "^7.22.0",
+    "jest": "^26.6.3"
   }
 }
