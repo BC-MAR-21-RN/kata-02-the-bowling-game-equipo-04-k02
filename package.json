@@ -1,0 +1,24 @@
+{
+  "name": "kata-02-the-bowling-game-equipo-04-k02",
+  "version": "1.0.0",
+  "description": "![BrightCoders Logo](img/logo-bc.png)",
+  "main": "main.js",
+  "type":"commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BC-MAR-21-RN/kata-02-the-bowling-game-equipo-04-k02.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BC-MAR-21-RN/kata-02-the-bowling-game-equipo-04-k02/issues"
+  },
+  "homepage": "https://github.com/BC-MAR-21-RN/kata-02-the-bowling-game-equipo-04-k02#readme",
+  "devDependencies": {
+    "eslint": "^7.22.0"
+  }
+}
