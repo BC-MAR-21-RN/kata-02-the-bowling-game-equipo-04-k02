@@ -55,7 +55,7 @@
         "no-whitespace-before-property": "error",
         "object-curly-spacing": [ "error", "always" ],
         "one-var": "off",
-        "prefer-const": "error",
+        "prefer-const": "off",
         "semi": "error",
         "semi-spacing": "error",
         "space-before-blocks": [ "error", "always" ],
