@@ -1,4 +1,4 @@
-import { Frame } from "./Frame.js";
+import { Frame } from "./frame.js";
 
 export class GameHandler {
 	constructor( shotAmount ) {
@@ -16,7 +16,7 @@ export class GameHandler {
 			}
 		}
 
-		return true;
+		return this.frames;
 	}
 
 	takeTurn( shotAmount ) {
@@ -40,6 +40,7 @@ export class GameHandler {
 				this.frames[ i ].score += this.trycatcher( i );
 			}
 		}
+		return true;
 	}
 
 	trycatcher( i ) {
