@@ -1,14 +1,26 @@
 export class Frame {
 	constructor( shotAmount ) {
 		this.shotAmount = shotAmount;
-		this.globalScore = 0;
+		this.shots = [];
+		this.maxScore = 10;
+		this.pinsLeft = this.maxScore;
+		this.score = 0;
 	}
 
-	setGlobalScore( score ) {
-		this.globalScore = score;
+	setScore( score ) {
+		this.score = score;
 	}
-	
-	Shots() {
-		
+
+	setPinsLeft( pinsLeft ) {
+		this.pinsLeft = pinsLeft;
+	}
+
+	performShot() {
+		let number = Math.floor( Math.random() * ( this.maxScore - this.score + 1 ) );
+		this.setPinsLeft( this.pinsLeft -= number );
+		this.setScore( this.score + number );
+		this.shots.push( number );
+
+		return this.pinsLeft;
 	}
 }

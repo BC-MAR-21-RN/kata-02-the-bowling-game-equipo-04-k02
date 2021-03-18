@@ -1,12 +1,10 @@
 import { Frame } from "./Frame.js";
-import { Strike } from "./Strike.js";
-import { Spare } from "./Spare.js";
-import { Shot } from "./shot.js";
+import { GameHandler } from "./gameHandler.js";
 
-let ns = new Shot();
+let gh = new GameHandler( 2 );
 
-console.log( ns );
+console.log( gh );
 
-ns.performShot();
+gh.countFrames();
 
-console.log( ns );
+console.log( gh );
